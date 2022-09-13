@@ -4,8 +4,7 @@ const MobileMenu = () => {
   const closeMenu = _ => {
     const mobileMenu = document.getElementById("mobileMenu")
     mobileMenu.style.display = "none"
-    mobileMenu.style.right = "-10000000px"
-    
+
   }
   return (
     <div id="mobileMenu">

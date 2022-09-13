@@ -6,8 +6,6 @@ const nav = () => {
   const showMobileMenu = _ => {
     const mobileMenu = document.getElementById("mobileMenu")
       mobileMenu.style.display = "block"
-      mobileMenu.style.right = "0px"
-      mobileMenu.style.transition = "right .4s linear;"
   }
   return (
     <nav id='nav'>
