@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLinks from '../NavLinks'
+import NavLinks from './NavLinks'
 import MobileMenu from './MobileMenu'
 import logo from "./xend-logo.svg"
 const nav = () => {

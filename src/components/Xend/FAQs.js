@@ -9,7 +9,7 @@ const FAQs = () => {
     },
     {
       question: "What if I forgot my password?",
-      answer: "Xend dosen't disclose user passwords. Please ask the sender to resend the password.",
+      answer: "Xend does not disclose user passwords. Please ask the sender to resend the password.",
       id:1
     }
 ])

@@ -1,31 +1,20 @@
 import "./App.css";
-import Banner from "./components/Banner";
-import FloatBtn from "./components/FloatBtn";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-import Nav from "./components/Nav";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import XendSecure from "./components/Xend/XendSecure";
+import Eivolv from "./components/Eivolv/Eivolv";
+
 function App() {
-  window.onscroll = (_) => {
-    let x = window.pageYOffset;
-    if (x > 500) {
-      document.getElementById("FloatBtn").style.display = "block";
-    } else {
-      document.getElementById("FloatBtn").style.display = "none";
-    }
-  };
   return (
-    <Router>
-      <div id="body">
-        <div id="header">
-          <Nav />
-          <Banner />
-        </div>
-        <Main />
-        <Footer />
-        <FloatBtn />
-      </div>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Eivolv /> } />
+          <Route path="/xend-secure" element={<XendSecure />} />
+        </Routes>
+
+      </Router>
+ 
+    </>
   );
 }
 
