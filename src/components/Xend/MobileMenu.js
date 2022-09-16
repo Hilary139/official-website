@@ -16,7 +16,7 @@ const MobileMenu = () => {
       <br />
         <Link to='/xend-secure' >Home</Link>
       <Link to="/xend-secure#xend-offers">What we offer</Link>
-      <Link to="Offers">How it works</Link>
+      <Link to="/xend-secure/how-it-works">How it works</Link>
       <Link to="/">Eivolv</Link>
 
       <Routes>

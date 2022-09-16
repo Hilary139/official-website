@@ -7,7 +7,7 @@ const NavLinks = () => {
         <ul id='navList'>
       <Link to='/xend-secure' >Home</Link>
       <Link to="/xend-secure#xend-offers">What we offer</Link>
-      <Link to="/xend-secure#illustration">How it works</Link>
+      <Link to="/xend-secure/how-it-works">How it works</Link>
       <Link to="/">Eivolv</Link>
     </ul>
       <Routes>

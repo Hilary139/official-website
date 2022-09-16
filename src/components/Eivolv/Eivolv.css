@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+}
+.Header img{
+height: 70px;
+}
+.Header ul{
+display: flex;
+gap:15px;
+}
+
+.Header ul a{
+  width: max-content;
+  display: block;
+  color: #000;
+}
+.Header ul a:hover{
+  color: #ff8800;
+
+}

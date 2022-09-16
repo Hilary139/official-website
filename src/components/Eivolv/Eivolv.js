@@ -1,14 +1,10 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import "./Eivolv.css"
+import Header from './Header'
 const Eivolv = () => {
   return (
     <div>
-      <h2>Eivolv</h2>
-      <ul>
-        <Link to="/xend-secure">Xend-secure</Link>
-        <Link to="/Xcloud">Xcloud</Link>
-      </ul>
-
+      <Header />
     </div>
   )
 }

@@ -24,7 +24,7 @@ const XendSecure = () => {
     }
   }, [key, hash]);
   return (
-    <div id="body">
+    <div className="body">
       <Favicon url="xend-logo.svg"/>
         <div id="header">
           <Nav />
