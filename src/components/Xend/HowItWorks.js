@@ -9,8 +9,26 @@ import password from "./password.png";
 import cloud from "./cloud.png";
 import { useState } from "react";
 import BlueBtn from "./BlueBtn";
+import Footer from "./Footer";
+import FloatBtn from "./FloatBtn";
 
 const HowItWorks = () => {
+  window.onscroll = (_) => {
+    let x = window.pageYOffset;
+    if (x > 500) {
+      document.getElementById("FloatBtn").style.display = "block";
+    } else {
+      document.getElementById("FloatBtn").style.display = "none";
+    }
+  };
+  window.onload = (_) => {
+    let x = window.pageYOffset;
+    if (x > 500) {
+      document.getElementById("FloatBtn").style.display = "block";
+    } else {
+      document.getElementById("FloatBtn").style.display = "none";
+    }
+  };
   const [steps] = useState([
     {
       img: selectFile,
@@ -65,7 +83,11 @@ const HowItWorks = () => {
             )
           }
         </div>
-        <BlueBtn id="BTN" title="GET STARTED NOW" color="white" bgcolor="#0361FF" link="https://xend-secure.herokuapp.com/"/>
+      <div className="action">
+      <BlueBtn  title="GET STARTED NOW" color="white" bgcolor="#0361FF" link="https://xend-secure.herokuapp.com/"/>
+      </div>
+      <Footer />
+      <FloatBtn />
     </div>
   );
 };

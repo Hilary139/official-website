@@ -16,6 +16,14 @@ const XendSecure = () => {
       document.getElementById("FloatBtn").style.display = "none";
     }
   };
+  window.onload = (_) => {
+    let x = window.pageYOffset;
+    if (x > 500) {
+      document.getElementById("FloatBtn").style.display = "block";
+    } else {
+      document.getElementById("FloatBtn").style.display = "none";
+    }
+  };
   const { hash, key } = useLocation();
   useEffect(() => {
     if (hash) {

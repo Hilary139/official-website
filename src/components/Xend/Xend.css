@@ -58,7 +58,7 @@ a{
   background-color: rgba(0, 0, 0, 0.295);
   position: relative;
 }
-#nav a:hover{
+#navList a:hover{
 color:#ff8800
 }
 #nav img {
@@ -256,6 +256,7 @@ text-align: center;
   font-size: 17px;
   color: grey;
 }
+
 #steps {
   display: flex;
   flex-wrap: wrap;
@@ -297,10 +298,16 @@ border-radius: 50%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-/* #BTN {
-  margin: auto;
-  padding-inline: 399px;
-} */
+.action{
+  padding-bottom: 20px;
+  width: 55vw;
+  margin: 0 auto;
+}
+.action > .actionBtn{
+width: 100%;
+text-align: center;
+}
+
 @media (max-width:800px){
   body {
     --h1: 28px;
