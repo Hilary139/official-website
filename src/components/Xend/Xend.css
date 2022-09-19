@@ -54,7 +54,7 @@ a{
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 2%;
+  padding-inline: 2%;
   background-color: rgba(0, 0, 0, 0.295);
   position: relative;
 }
@@ -62,7 +62,7 @@ a{
 color:#ff8800
 }
 #nav img {
-  height: 70px;
+  height: 120px;
 }
 #nav ul {
   display: flex;
@@ -168,17 +168,17 @@ footer {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  background-color: #ff8800;
-  padding: 1px 7px;
-  border-radius: 3px;
+  background-color: #8b89865b;
+  padding: 1px 13px;
   font-size: 30px;
   color: white;
-  box-shadow: 0px 1px 5px #f8a20d;
+  box-shadow: 0px 1px 5px #c0bfbda6;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 50%;
 }
 #FloatBtn:hover {
-  box-shadow: 0px 1px 10px #f5a925;
+  box-shadow: 0px 1px 10px #918f8d96;
 }
 @keyframes slide {
   0% {
@@ -245,8 +245,8 @@ height: 100vh;
 }
 #how-to{
 margin-block: 50px ;
-
 text-align: center;
+padding-inline: 10vw;
 }
 #how-to h1{
   font-size: 40px;
@@ -269,20 +269,24 @@ text-align: center;
   min-height: 100px;
 }
 #steps > .step{
-  width: 65vw;
+  width: 30vw;
   max-width: 752px;
   text-align: center;
   background-color: rgba(128, 77, 125, 0.158);
   padding: 2%;
-  border-radius: 5px;
+  border-radius: 15px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  border: 3px solid #ff8800;
+  /* border: 3px solid #ff8800; */
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 20px;
+}
+.step h3{
+  opacity: .7;
+
 }
 .step::after{
   content: counter(step);
@@ -300,7 +304,7 @@ border-radius: 50%;
 }
 .action{
   padding-bottom: 20px;
-  width: 55vw;
+  width: 35vw;
   margin: 0 auto;
 }
 .action > .actionBtn{
@@ -318,8 +322,14 @@ text-align: center;
   p {
     font-size: var(--p);
   }
+  #how-to h1{
+    font-size: var(--h1);
+  }
   #nav ul {
     display:none;
+  }
+  #nav img{
+    height: 80px;
   }
   .offer{
     width: 40vw;

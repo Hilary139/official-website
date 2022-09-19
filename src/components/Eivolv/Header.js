@@ -8,6 +8,7 @@ const Header = () => {
       <ul>
         <Link to="/xend-secure">Xend-secure</Link>
         <Link to="/Xcloud">Xcloud</Link>
+        <Link to="/Classroom">The Classroom</Link>
       </ul>
     </div>
   )

@@ -1,7 +1,7 @@
 import React, { useState }  from 'react'
 
 const FAQs = () => {
-  const [faqs, setFaqs] = useState([
+  const [faqs] = useState([
     {
       question: "Can I send large files?",
       answer: "Yes. Xend allows you to send large files",

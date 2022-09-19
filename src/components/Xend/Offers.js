@@ -6,7 +6,7 @@ import file  from "./file-plus.svg";
 import globe  from "./globe.svg";
 
 const Offers = () => {
-  const [offers, setOffers] = useState([
+  const [offers] = useState([
     {
       image: file,
       title: "Choose Once. Share everywhere.",
